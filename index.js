@@ -8,7 +8,6 @@ http.createServer( function (req, res) {
     if (query.pathname =='/') {
         res.writeHead(200 , {'Content-Type': "text/html"});
         res.write("<h1> Hello World! </h1>"); // This is showing that it is html.
-        res.write(JSON.stringify(url));
         res.end();
     }
     else {
